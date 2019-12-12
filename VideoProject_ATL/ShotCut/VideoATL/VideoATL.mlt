@@ -1,8 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mlt LC_NUMERIC="C" version="6.17.0" title="Shotcut version 19.10.20" producer="playlist0">
-  <profile description="HD 1080p 25 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+  <profile description="automatic" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="1920" display_aspect_den="1080" frame_rate_num="460140" frame_rate_den="15337" colorspace="709"/>
+  <producer id="producer0" title="Anonymous Submission" in="00:00:00.000" out="00:08:31.298">
+    <property name="length">00:08:31.331</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/ScreenCasts/12.11.19 - 5th Hour.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-12-11T18:03:39</property>
+    <property name="shotcut:hash">7739cb4f2d8ba458f445b34f3eacc8c4</property>
+    <property name="ignore_points">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">12.11.19 - 5th Hour.mp4</property>
+  </producer>
+  <producer id="producer1" title="Anonymous Submission" in="00:00:00.000" out="00:00:15.699">
+    <property name="length">472</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/Arduino Video/blink.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-12-11T18:14:24</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">885c1951905c361d6a5033667d044ade</property>
+  </producer>
+  <producer id="producer2" title="Anonymous Submission" in="00:00:00.000" out="00:00:31.698">
+    <property name="length">952</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/Arduino Video/ledPotentiometer.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-12-11T18:16:37</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">33f2325f01bb0439c9dad5f013da4adb</property>
+  </producer>
+  <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:00:20.465">
+    <property name="length">615</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/Arduino Video/pushButton.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-12-11T18:15:28</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">c7ad6ac1b1fd92be557ae378cb77a2d9</property>
+  </producer>
   <playlist id="playlist0" title="Shotcut version 19.10.20">
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:08:31.298"/>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:15.699"/>
+    <entry producer="producer2" in="00:00:00.000" out="00:00:31.698"/>
+    <entry producer="producer3" in="00:00:00.000" out="00:00:20.465"/>
   </playlist>
 </mlt>
