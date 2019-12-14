@@ -102,14 +102,25 @@
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
     <property name="shotcut:caption">12.11.19 - 5th Hour.mp4</property>
-    <filter id="filter0" out="00:04:02.000">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">0</property>
-      <property name="mlt_service">volume</property>
-    </filter>
   </producer>
   <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:08:31.298">
+    <property name="length">00:08:31.331</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/ScreenCasts/12.11.19 - 5th Hour.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-12-11T18:03:39</property>
+    <property name="shotcut:hash">7739cb4f2d8ba458f445b34f3eacc8c4</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">12.11.19 - 5th Hour.mp4</property>
+  </producer>
+  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:08:31.298">
     <property name="length">00:08:31.331</property>
     <property name="eof">pause</property>
     <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/ScreenCasts/12.11.19 - 5th Hour.mp4</property>
@@ -135,10 +146,72 @@
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V1</property>
-    <entry producer="producer4" in="00:00:00.000" out="00:04:02.000"/>
-    <entry producer="producer5" in="00:04:02.033" out="00:08:23.465"/>
+    <property name="shotcut:lock">0</property>
+    <entry producer="producer4" in="00:00:00.000" out="00:00:08.999"/>
+    <entry producer="producer5" in="00:00:09.033" out="00:04:02.000"/>
+    <entry producer="producer6" in="00:04:02.033" out="00:08:23.465"/>
   </playlist>
-  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:00:31.698">
+  <producer id="producer7" title="Anonymous Submission" in="00:00:00.000" out="00:08:31.298">
+    <property name="length">00:08:31.331</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/ScreenCasts/12.11.19 - 5th Hour.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-12-11T18:03:39</property>
+    <property name="shotcut:hash">7739cb4f2d8ba458f445b34f3eacc8c4</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">12.11.19 - 5th Hour.mp4</property>
+    <filter id="filter0" out="00:00:08.999">
+      <property name="argument">Mr Lange
+
+Arduino
+Training
+Labs</property>
+      <property name="geometry">0 0 1920 1080 1</property>
+      <property name="family">Sans</property>
+      <property name="size">216</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">6</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter2" out="00:00:08.999">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="shotcut:animIn">00:00:01.033</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter3" out="00:00:08.999">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">00:00:07.999=1;00:00:08.999=0</property>
+      <property name="shotcut:animOut">00:00:01.033</property>
+      <property name="disable">0</property>
+    </filter>
+  </producer>
+  <producer id="producer8" title="Anonymous Submission" in="00:00:00.000" out="00:00:31.698">
     <property name="length">952</property>
     <property name="eof">pause</property>
     <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/Arduino Video/ledPotentiometer.mp4</property>
@@ -153,7 +226,7 @@
     <property name="xml">was here</property>
     <property name="shotcut:hash">33f2325f01bb0439c9dad5f013da4adb</property>
     <property name="shotcut:caption">ledPotentiometer.mp4</property>
-    <filter id="filter2" out="00:00:31.698">
+    <filter id="filter4" out="00:00:31.698">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineRotate</property>
@@ -164,8 +237,24 @@
       <property name="transition.threads">0</property>
       <property name="transition.scale_y">1.33333</property>
     </filter>
+    <filter id="filter5" out="00:00:31.698">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">00:00:01.033</property>
+    </filter>
+    <filter id="filter6" out="00:00:31.698">
+      <property name="start">1</property>
+      <property name="level">00:00:30.698=1;00:00:31.698=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">00:00:01.033</property>
+    </filter>
   </producer>
-  <producer id="producer7" title="Anonymous Submission" in="00:00:00.000" out="00:00:15.699">
+  <producer id="producer9" title="Anonymous Submission" in="00:00:00.000" out="00:00:15.699">
     <property name="length">472</property>
     <property name="eof">pause</property>
     <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/Arduino Video/blink.mp4</property>
@@ -180,7 +269,7 @@
     <property name="xml">was here</property>
     <property name="shotcut:hash">885c1951905c361d6a5033667d044ade</property>
     <property name="shotcut:caption">blink.mp4</property>
-    <filter id="filter3" out="00:00:15.699">
+    <filter id="filter7" out="00:00:15.699">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineRotate</property>
@@ -192,7 +281,7 @@
       <property name="transition.scale_y">1.33333</property>
     </filter>
   </producer>
-  <producer id="producer8" title="Anonymous Submission" in="00:00:00.000" out="00:00:20.465">
+  <producer id="producer10" title="Anonymous Submission" in="00:00:00.000" out="00:00:20.465">
     <property name="length">615</property>
     <property name="eof">pause</property>
     <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/Arduino Video/pushButton.mp4</property>
@@ -207,7 +296,7 @@
     <property name="xml">was here</property>
     <property name="shotcut:hash">c7ad6ac1b1fd92be557ae378cb77a2d9</property>
     <property name="shotcut:caption">pushButton.mp4</property>
-    <filter id="filter4" out="00:00:20.465">
+    <filter id="filter8" out="00:00:20.465">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineRotate</property>
@@ -222,12 +311,14 @@
   <playlist id="playlist1">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V2</property>
+    <property name="shotcut:lock">0</property>
+    <entry producer="producer7" in="00:00:00.000" out="00:00:08.999"/>
     <blank length="00:01:19.065"/>
-    <entry producer="producer6" in="00:00:00.000" out="00:00:31.698"/>
+    <entry producer="producer8" in="00:00:00.000" out="00:00:31.698"/>
     <blank length="00:01:22.365"/>
-    <entry producer="producer7" in="00:00:00.000" out="00:00:15.699"/>
+    <entry producer="producer9" in="00:00:00.000" out="00:00:15.699"/>
     <blank length="00:01:34.031"/>
-    <entry producer="producer8" in="00:00:00.000" out="00:00:20.465"/>
+    <entry producer="producer10" in="00:00:00.000" out="00:00:20.465"/>
   </playlist>
   <tractor id="tractor0" title="Shotcut version 19.10.20" global_feed="1" in="00:00:00.000" out="00:08:23.465">
     <property name="shotcut">1</property>
