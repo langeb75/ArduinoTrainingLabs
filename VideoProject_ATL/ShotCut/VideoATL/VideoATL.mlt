@@ -74,8 +74,8 @@
     <entry producer="producer2" in="00:00:00.000" out="00:00:31.698"/>
     <entry producer="producer3" in="00:00:00.000" out="00:00:20.465"/>
   </playlist>
-  <producer id="black" in="00:00:00.000" out="00:08:31.298">
-    <property name="length">00:08:31.331</property>
+  <producer id="black" in="00:00:00.000" out="00:08:23.465">
+    <property name="length">00:08:23.498</property>
     <property name="eof">pause</property>
     <property name="resource">0</property>
     <property name="aspect_ratio">1</property>
@@ -84,7 +84,7 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:08:31.298"/>
+    <entry producer="black" in="00:00:00.000" out="00:08:23.465"/>
   </playlist>
   <producer id="producer4" title="Anonymous Submission" in="00:00:00.000" out="00:08:31.298">
     <property name="length">00:08:31.331</property>
@@ -98,17 +98,47 @@
     <property name="aspect_ratio">1</property>
     <property name="creation_time">2019-12-11T18:03:39</property>
     <property name="shotcut:hash">7739cb4f2d8ba458f445b34f3eacc8c4</property>
-    <property name="ignore_points">1</property>
+    <property name="ignore_points">0</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
     <property name="shotcut:caption">12.11.19 - 5th Hour.mp4</property>
+    <filter id="filter0" out="00:04:02.000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:08:31.298">
+    <property name="length">00:08:31.331</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/ScreenCasts/12.11.19 - 5th Hour.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-12-11T18:03:39</property>
+    <property name="shotcut:hash">7739cb4f2d8ba458f445b34f3eacc8c4</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">12.11.19 - 5th Hour.mp4</property>
+    <filter id="filter1" in="00:04:02.033" out="00:08:23.465">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">12.2</property>
+      <property name="mlt_service">volume</property>
+    </filter>
   </producer>
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V1</property>
-    <entry producer="producer4" in="00:00:00.000" out="00:08:31.298"/>
+    <entry producer="producer4" in="00:00:00.000" out="00:04:02.000"/>
+    <entry producer="producer5" in="00:04:02.033" out="00:08:23.465"/>
   </playlist>
-  <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:00:31.698">
+  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:00:31.698">
     <property name="length">952</property>
     <property name="eof">pause</property>
     <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/Arduino Video/ledPotentiometer.mp4</property>
@@ -123,7 +153,7 @@
     <property name="xml">was here</property>
     <property name="shotcut:hash">33f2325f01bb0439c9dad5f013da4adb</property>
     <property name="shotcut:caption">ledPotentiometer.mp4</property>
-    <filter id="filter0" out="00:00:31.698">
+    <filter id="filter2" out="00:00:31.698">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineRotate</property>
@@ -135,7 +165,7 @@
       <property name="transition.scale_y">1.33333</property>
     </filter>
   </producer>
-  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:00:15.699">
+  <producer id="producer7" title="Anonymous Submission" in="00:00:00.000" out="00:00:15.699">
     <property name="length">472</property>
     <property name="eof">pause</property>
     <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/Arduino Video/blink.mp4</property>
@@ -150,7 +180,7 @@
     <property name="xml">was here</property>
     <property name="shotcut:hash">885c1951905c361d6a5033667d044ade</property>
     <property name="shotcut:caption">blink.mp4</property>
-    <filter id="filter1" out="00:00:15.699">
+    <filter id="filter3" out="00:00:15.699">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineRotate</property>
@@ -162,20 +192,44 @@
       <property name="transition.scale_y">1.33333</property>
     </filter>
   </producer>
+  <producer id="producer8" title="Anonymous Submission" in="00:00:00.000" out="00:00:20.465">
+    <property name="length">615</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/lange/MrLange/Arduino/2019-2020/1stTri-5thHour/ArduinoTrainingLabs/VideoProject_ATL/Video/Arduino Video/pushButton.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-12-11T18:15:28</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">c7ad6ac1b1fd92be557ae378cb77a2d9</property>
+    <property name="shotcut:caption">pushButton.mp4</property>
+    <filter id="filter4" out="00:00:20.465">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">90</property>
+      <property name="transition.scale_x">1.33333</property>
+      <property name="transition.ox">369</property>
+      <property name="transition.oy">1174</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">1.33333</property>
+    </filter>
+  </producer>
   <playlist id="playlist1">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V2</property>
     <blank length="00:01:19.065"/>
-    <entry producer="producer5" in="00:00:00.000" out="00:00:31.698"/>
+    <entry producer="producer6" in="00:00:00.000" out="00:00:31.698"/>
     <blank length="00:01:22.365"/>
-    <entry producer="producer6" in="00:00:00.000" out="00:00:15.699"/>
+    <entry producer="producer7" in="00:00:00.000" out="00:00:15.699"/>
+    <blank length="00:01:34.031"/>
+    <entry producer="producer8" in="00:00:00.000" out="00:00:20.465"/>
   </playlist>
-  <playlist id="playlist2">
-    <property name="shotcut:video">1</property>
-    <property name="shotcut:name">V3</property>
-    <blank length="00:00:00.033"/>
-  </playlist>
-  <tractor id="tractor0" title="Shotcut version 19.10.20" global_feed="1" in="00:00:00.000" out="00:08:31.298">
+  <tractor id="tractor0" title="Shotcut version 19.10.20" global_feed="1" in="00:00:00.000" out="00:08:23.465">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
@@ -183,7 +237,6 @@
     <track producer="background"/>
     <track producer="playlist0"/>
     <track producer="playlist1" hide="audio"/>
-    <track producer="playlist2"/>
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -208,20 +261,6 @@
     <transition id="transition3">
       <property name="a_track">1</property>
       <property name="b_track">2</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="disable">0</property>
-    </transition>
-    <transition id="transition4">
-      <property name="a_track">0</property>
-      <property name="b_track">3</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="transition5">
-      <property name="a_track">1</property>
-      <property name="b_track">3</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="disable">0</property>
